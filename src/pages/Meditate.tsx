@@ -4,17 +4,17 @@ import Navbar from '@/components/Navbar';
 import MeditationTimer from '@/components/MeditationTimer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Moon, Waves, Wind, Birds, Volume2, Play, Pause } from 'lucide-react';
+import { Moon, Waves, Wind, Bird, Volume2, Play, Pause } from 'lucide-react';
 
-// Create custom icons for sounds
-const Birds = Wind;
+// Use a different name for our custom icon
+const ForestIcon = Wind;
 
 const Meditate: React.FC = () => {
   const [activeSound, setActiveSound] = useState<string | null>(null);
   
   const sounds = [
     { id: 'rain', name: 'Rain', icon: Waves },
-    { id: 'forest', name: 'Forest', icon: Birds },
+    { id: 'forest', name: 'Forest', icon: ForestIcon },
     { id: 'night', name: 'Night', icon: Moon },
     { id: 'white-noise', name: 'White Noise', icon: Volume2 },
   ];
