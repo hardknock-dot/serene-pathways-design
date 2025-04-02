@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { SmilePlus, Smile, Meh, Frown, FrownOpen } from 'lucide-react';
+import { SmilePlus, Smile, Meh, Frown, AlertTriangle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const moods = [
@@ -10,7 +10,7 @@ const moods = [
   { value: 'good', icon: Smile, color: 'text-blue-500', label: 'Good' },
   { value: 'okay', icon: Meh, color: 'text-yellow-500', label: 'Okay' },
   { value: 'bad', icon: Frown, color: 'text-orange-500', label: 'Bad' },
-  { value: 'awful', icon: FrownOpen, color: 'text-red-500', label: 'Awful' },
+  { value: 'awful', icon: AlertTriangle, color: 'text-red-500', label: 'Awful' },
 ];
 
 const MoodTracker: React.FC = () => {

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import MoodTracker from '@/components/MoodTracker';
@@ -8,7 +7,7 @@ import {
   Smile, 
   Meh, 
   Frown, 
-  FrownOpen, 
+  AlertTriangle, 
   BarChart, 
   Calendar 
 } from 'lucide-react';
@@ -26,7 +25,7 @@ const moods = [
   { value: 'good', icon: Smile, color: '#3b82f6', label: 'Good' },
   { value: 'okay', icon: Meh, color: '#eab308', label: 'Okay' },
   { value: 'bad', icon: Frown, color: '#f97316', label: 'Bad' },
-  { value: 'awful', icon: FrownOpen, color: '#ef4444', label: 'Awful' }
+  { value: 'awful', icon: AlertTriangle, color: '#ef4444', label: 'Awful' }
 ];
 
 // Sample data for mood history
